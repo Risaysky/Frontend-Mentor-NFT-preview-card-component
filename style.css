@@ -119,6 +119,7 @@ h1 {
 
 .details__price {
     color: var(--cyan-400);
+    font-weight: 600;
 }
 
 .creator {
