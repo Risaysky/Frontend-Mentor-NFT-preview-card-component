@@ -8,8 +8,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- [Solution page]()
-- [Live site]()
+- [Solution page](https://www.frontendmentor.io/solutions/flexbox-nft-preview-card-component-qC6nxwqkSI)
+- [Live site](https://risaysky.github.io/Frontend-Mentor-NFT-preview-card-component/)
 
 
 ## Built with
