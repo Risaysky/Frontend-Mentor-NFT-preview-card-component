@@ -1,0 +1,149 @@
+:root {
+    --blue-500: hsl(215, 51%, 70%);
+    --cyan-400: hsl(178, 100%, 50%);
+    --cyan-100: hsla(178, 100%, 50%, .5);
+    --blue-950: hsl(217, 54%, 11%);
+    --blue-900: hsl(216, 50%, 16%);
+    --blue-800: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+    margin: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+    background-color: var(--blue-950);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: var(--blue-500);
+}
+
+img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    inline-size: 22rem;
+    block-size: 37.5rem;
+    background-color: var(--blue-900);
+    padding: 1.5rem;
+    margin-inline: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2rem 3rem 2rem rgba(0, 0, 0, .2);
+}
+
+.NFT {
+    border-radius: 10px;
+}
+
+.NFT-img {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.NFT-img:hover::before,
+.NFT-img:focus-visible::before {
+    position: absolute;
+    content: "";
+    background-color: var(--cyan-100);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.NFT-img:hover::after,
+.NFT-img:focus-visible::after {
+    position: absolute;
+    content: url("images/icon-view.svg");
+    top: 50%;
+    left: 50%;
+    margin-inline-start: -1.5rem;
+    margin-block-start: -1.5rem;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-block: 1.5rem 1rem;
+}
+
+.NFT-description {
+    font-size: clamp(1rem, 0.792rem + 0.889vw, 1.125rem);
+    line-height: clamp(1.625rem, 1.833rem + -0.889vw, 1.5rem);
+}
+
+.details {
+    justify-content: space-between;
+    width: 100%;
+    margin-block: 1.5rem;
+}
+
+.details__price,
+.details__time {
+    font-weight: 400;
+    align-items: center;
+    gap: .5rem;
+}
+
+.details__price img {
+    inline-size: .75rem;
+}
+
+.details__time img {
+    inline-size: 1.125rem;
+}
+
+.details__price {
+    color: var(--cyan-400);
+}
+
+.creator {
+    border-block-start: 1px solid var(--blue-800);
+    align-items: center;
+    gap: 1rem;
+    padding-block-start: 1rem;
+}
+
+.creator__img {
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+
+
+a:link,
+a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--cyan-400);
+}
